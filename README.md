@@ -4,10 +4,18 @@ A Python tool that downloads historical stock prices and computes the core
 statistics quants look at first: returns, volatility, drawdown, Sharpe ratio,
 and correlations.
 
+
+Return correlations scale: Negative 1 -> 1
+
+-1 = They always move in opposite directions
+0 = No relationship, so one stock’s move tells you nothing about the other’s
+1 = The two stock prices always move in unison
+
+
 ![Dashboard](dashboard.png)
 
 ## Features
-- Prompts for tickers and time period (or accepts them as command line arguments)
+- Requests user for tickers and time period (or accepts them as command line arguments)
 - Annualised return, volatility, and Sharpe ratio
 - Max drawdown and a drawdown over time chart
 - Rolling 30 day volatility
