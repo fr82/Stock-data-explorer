@@ -32,7 +32,7 @@ Run `python main.py` with no arguments and it will ask for tickers.
 
 ## How it works
 - **Return:** `pct_change()` on adjusted closing prices
-- **Volatility:** standard deviation of daily returns, scaled by √252 to annualize
+- **Volatility:** standard deviation of daily returns, scaled by √252 to annualise
 - **Sharpe ratio:** annualized return divided by annualized volatility (risk-free rate assumed 0)
 - **Drawdown:** price divided by its running peak, minus 1
 - **Correlation:** computed on daily returns, not prices
