@@ -98,7 +98,7 @@ def main():
             print("No tickers entered.")
             return
 
-    # Ask for years if not passed
+    # Ask for years if not already passed
     if args.years is None:
         raw_years = input("How many years of history? [default 5]: ").strip()
         years = int(raw_years) if raw_years.isdigit() else 5
