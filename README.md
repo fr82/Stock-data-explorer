@@ -1,6 +1,6 @@
 # Stock Data Explorer
 
-A Python tool that downloads historical stock prices and computes the core
+A Python tool for downloading historical stock prices and computes the core
 statistics quants look at first: returns, volatility, drawdown, Sharpe ratio,
 and correlations.
 
