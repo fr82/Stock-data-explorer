@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 
-TRADING_DAYS = 25  # amount trading days in a year
+TRADING_DAYS = 252  # amount trading days in a year
 
 
 def load_prices(tickers, years):
