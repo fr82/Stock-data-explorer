@@ -46,7 +46,6 @@ def summary_table(prices):
         "Max Drawdown": drawdown(prices).min(),
     })
 
-
 def plot_dashboard(prices):
     rets = daily_returns(prices)
     fig, axes = plt.subplots(2, 2, figsize=(14, 9))
