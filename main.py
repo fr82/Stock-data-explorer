@@ -109,7 +109,6 @@ def main():
     print(f"\nLoaded {len(prices)} trading days: "
           f"{prices.index[0].date()} to {prices.index[-1].date()}\n")
     print(summary_table(prices).to_string(float_format=lambda x: f"{x:.3f}"))
-
     plot_dashboard(prices)
 
 
