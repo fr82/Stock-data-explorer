@@ -1,6 +1,6 @@
 """
 Downloads historical prices and calculates the basic statistics quants look at first:
-returns, volatility, drawdown, Sharpe ratio and correlations.
+returns, volatility, drawdown, sharpe ratio and correlations.
 """
 
 import argparse
