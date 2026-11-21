@@ -12,7 +12,7 @@ import yfinance as yf
 TRADING_DAYS = 252  # amount trading days in a year
 
 
-def load_prices(tickers, years): #rough
+def load_prices(tickers, years):
     data = yf.download(tickers, period=f"{years}y", auto_adjust=True, progress=False)
     prices = data["Close"]
     if isinstance(prices, pd.Series):  # single ticker comes back as a Series
