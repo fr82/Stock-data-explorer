@@ -25,6 +25,7 @@ def daily_returns(prices):
 def annualized_return(returns):
     total_growth = (1 + returns).prod()
     return total_growth ** (TRADING_DAYS / len(returns)) - 1
+    
 
 def annualized_volatility(returns):
     return returns.std() * np.sqrt(TRADING_DAYS)
