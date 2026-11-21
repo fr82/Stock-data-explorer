@@ -28,6 +28,7 @@ def annualized_return(returns):
 
 def annualized_volatility(returns):
     return returns.std() * np.sqrt(TRADING_DAYS)
+    
 
 def sharpe_ratio(returns, risk_free=0.0):
     return (annualized_return(returns) - risk_free) / annualized_volatility(returns)
