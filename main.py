@@ -18,7 +18,6 @@ def load_prices(tickers, years):
         prices = prices.to_frame(name=tickers[0])
     return prices.dropna(how="all").ffill().dropna()
 
-
 def daily_returns(prices):
     return prices.pct_change().dropna()
 
