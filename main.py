@@ -20,6 +20,7 @@ def load_prices(tickers, years):
 
 def daily_returns(prices):
     return prices.pct_change().dropna()
+    
 
 def annualized_return(returns):
     total_growth = (1 + returns).prod()
